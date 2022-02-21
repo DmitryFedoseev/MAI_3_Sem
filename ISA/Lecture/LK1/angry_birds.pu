@@ -1,0 +1,42 @@
+@startuml
+class Player
+{
+  nickname: string
+}
+
+class Level
+{
+  level: int
+}
+
+class Birds
+{
+  number: int
+  type: string
+}
+
+class Gun
+{
+  posX: double
+  posY: double
+}
+
+class Pig
+{
+  number: int
+  type: string
+  posX: double
+  posY: double
+}
+
+class Score
+{
+  score: double
+}
+
+Player --> Gun : Use
+Gun --> Birds : Shoot
+Birds --> Pig : Kill
+Pig --> Score : Sum
+Score --> Level : Up
+@enduml
