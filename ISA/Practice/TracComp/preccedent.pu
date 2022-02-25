@@ -17,8 +17,7 @@ left to right direction
 (Получение координат траектории движения до граффити) as PolKorTrac
 (Закраска граффити) as ZakG
 
-(Включение пулевизатора) as Vkl
-(Выключение пулевизатора) as Vukl
+(Активация системы очистки) as PerKorCam
 
 Cam --> Og
 Cam --> Or
@@ -31,6 +30,5 @@ Rob --> PolKorG
 Rob --> PolKorTrac
 Rob --> ZakG
 
-User --> Vkl
-User --> Vukl
+User --> PerKorCam
 @enduml
